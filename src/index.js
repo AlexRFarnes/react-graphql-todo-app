@@ -7,15 +7,10 @@ import {
   HttpLink,
   ApolloProvider,
 } from "@apollo/client";
-const authToken =
-  "G4Alg9HKEYhggvZFPARfmUbQppL54ll96xBzYPXKkdblO42D30vgZ2hBw17j9uph";
 
 const client = new ApolloClient({
   link: new HttpLink({
-    uri: "https://a-react-todo-graphql.hasura.app/v1/graphql",
-    headers: {
-      "x-hasura-admin-secret": authToken,
-    },
+    uri: "https://a-react-todo-graphql.herokuapp.com/v1/graphql",
   }),
   cache: new InMemoryCache(),
 });
