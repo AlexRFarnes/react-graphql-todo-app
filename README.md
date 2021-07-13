@@ -1,6 +1,6 @@
 # React GraphQL Todo App
 
-> A CRUD React app for todos that uses a custom GraphQL api built with [Hasura.io](https://hasura.io/) and the [Apollo GraphQL](https://www.apollographql.com/) library to perform all the GraphQL operations.
+> A CRUD React app for todos that uses a custom GraphQL api.
 
 ## Table of contents
 
@@ -14,7 +14,7 @@
 
 ## General info
 
-
+A CRUD React app for todos that uses a custom GraphQL api built with [Hasura.io](https://hasura.io/) and the [Apollo GraphQL](https://www.apollographql.com/) library to perform all the GraphQL operations.
 
 ## Screenshots
 
