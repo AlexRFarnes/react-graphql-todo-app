@@ -25,6 +25,8 @@ A CRUD React app for todos that uses a custom GraphQL api built with [Hasura.io]
 
 - JavaScript
 - React
+- GraphQL
+- Apollo
 
 ## Features
 
@@ -38,7 +40,7 @@ Project is: _finished_.
 
 ## Inspiration
 
-Project based on [React Bootcamp](https://reactbootcamp.com/).
+- Project based on [React Bootcamp](https://reactbootcamp.com/).
 
 ## Contact
 
