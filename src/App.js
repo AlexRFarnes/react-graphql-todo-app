@@ -61,33 +61,31 @@ function App() {
   const [deleteTodo] = useMutation(DELETE_TODO);
 
   async function handleToggleTodo({ id, done }) {
-    const data = await toggleTodo({
+    await toggleTodo({
       variables: {
         id,
         done: !done,
       },
     });
-    console.log("Toggle todo: ", data);
   }
 
   async function handleAddTodo(event) {
     event.preventDefault();
     if (!todoText.trim()) return;
-    const data = await addTodo({
+    await addTodo({
       variables: {
         text: todoText,
       },
       refetchQueries: [{ query: GET_TODOS }],
     });
-    console.log("Added todo: ", data);
-    // setTodoText("");
+    // setTodoText("")
   }
 
   async function handleDeleteTodo({ id }) {
     const isConfirmed = window.confirm("Do you want to delete this todo?");
 
     if (isConfirmed) {
-      const data = await deleteTodo({
+      await deleteTodo({
         variables: {
           id,
         },
@@ -97,7 +95,6 @@ function App() {
           cache.writeQuery({ query: GET_TODOS, data: { todos: newTodos } });
         },
       });
-      console.log("Deleted todo: ", data);
     }
   }
 
