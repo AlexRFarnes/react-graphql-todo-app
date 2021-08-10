@@ -10,8 +10,6 @@ import {
 
 const client = new ApolloClient({
   link: new HttpLink({
-    // uri: "https://a-react-todo-graphql.herokuapp.com/v1/graphql",
-    // Change location to env file
     uri: process.env.REACT_APP_ENDPOINT,
     headers: {
       "x-hasura-admin-secret": process.env.REACT_APP_SECRET,
